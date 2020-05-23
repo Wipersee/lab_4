@@ -8,7 +8,7 @@
     
     
 -----THIS IS THE CHECK FOR FUNCTION (DBMS OUTPUT MUST BE ENABLE)------
-    select * from get_sales_for_regions_tf('NA','EU');
+    select * from TABLE(get_sales_for_regions_tf('NA','EU'));
     
 
 -----THIS IS THE CHECK FOR TRIGGER (DBMS OUTPUT MUST BE ENABLE)------
