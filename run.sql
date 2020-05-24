@@ -1,3 +1,4 @@
+SET SERVEROUTPUT ON
 ------TEST-----
 ---FIRST OF ALL YOU NEED TO RUN populate.sql and package.sql and after that this file----
 
