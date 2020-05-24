@@ -71,15 +71,3 @@ FOR curr IN sales_cursor
             END LOOP;
 END get_sales_for_regions_tf; 
 END lab_4_proc_func;
-
-
-OPEN sales_cursor; 
-    LOOP 
-    FETCH sales_cursor 
-    INTO name_of_region, sales_amount; 
-    EXIT WHEN sales_cursor % NOTFOUND; 
-        PIPE ROW( 
-            sales_for_regions_type( 
-                name_of_region, 
-                sales_amount)); 
-    END LOOP;  
